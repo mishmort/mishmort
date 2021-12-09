@@ -1,0 +1,692 @@
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+@import url("https://use.typekit.net/lzw7xmq.css");
+
+
+
+
+@font-face {
+  font-family: 'Juby';
+  src: local('Juby'), url(./juby.otf) format('opentype');
+}
+
+/* 💛 */
+@font-face {
+  font-family: 'theramin';
+  src: local('theramin'), url(./theramin.ttf) format('truetype');
+}
+
+
+/* ｡･:*:･ﾟ★💕｡･:*:･ﾟ☆✨｡･:*:･ﾟ★💕｡･:*:･ﾟ☆✨｡･:*:･ﾟ★💕｡･:*:･ﾟ☆✨｡･:*:･ﾟ★💕｡･:*:･ﾟ☆✨｡･:*:･ﾟ★💕｡･:*:･ﾟ☆✨｡･:*:･ﾟ★💕｡･:*:･ﾟ☆✨ */
+
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  text-align: center;
+  font-family: 'Roboto Mono', monospace;
+  width: 100%;
+  height: 100%;
+  background-color: #010614;
+  overflow: hidden;
+}
+
+.notfound {
+  color: white; 
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+
+.blur {
+  width: 100%;
+  height:100%;
+  top:0;
+  position: absolute;
+  overflow: hidden;
+}
+
+.blobs {
+  font-size: 50px;
+  color:white;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-backface-visibility: hidden;
+  position: relative;
+}
+
+.blob {
+  filter: blur(20px);
+}
+
+/* ｡･:*:･ﾟ★💕｡･:*:･ﾟ☆✨｡･:*:･ﾟ★💕｡･:*:･ﾟ☆✨｡･:*:･ﾟ★💕｡･:*:･ﾟ☆✨｡･:*:･ﾟ★💕｡･:*:･ﾟ☆✨｡･:*:･ﾟ★💕｡･:*:･ﾟ☆✨｡･:*:･ﾟ★💕｡･:*:･ﾟ☆✨ */
+
+
+* {
+
+  /* cursor: url(https://cur.cursors-4u.net/cursors/cur-11/cur1054.cur), auto !important; */
+  /* DEVIL */
+  cursor:  url(https://cur.cursors-4u.net/cursors/cur-1/cur7.cur) , auto !important;
+  /* SMALL SHINY WHITE */
+  /* cursor: url(https://cur.cursors-4u.net/cursors/cur-6/cur544.cur), auto !important; */
+  box-sizing: border-box;
+}
+
+
+
+/* ｡･:*:･ﾟ★💕｡･:*:･ﾟ☆✨｡･:*:･ﾟ★💕｡･:*:･ﾟ☆✨｡･:*:･ﾟ★💕｡･:*:･ﾟ☆✨｡･:*:･ﾟ★💕｡･:*:･ﾟ☆✨｡･:*:･ﾟ★💕｡･:*:･ﾟ☆✨｡･:*:･ﾟ★💕｡･:*:･ﾟ☆✨ */
+
+
+.mishmort {
+  width: 100vw;
+  height: 100vh;
+}
+
+.main {
+  width: 100vw;
+  display:flex;
+  justify-content: center;
+}
+
+.content {
+  width: 85%;
+  height: 78%;
+  margin-top: 7%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  
+}
+
+.footer {
+  color: white;
+  position: absolute;
+  bottom: 40px;
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 12px;
+}
+
+#footertitle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.globelogo {
+  margin-right: 8px;
+}
+
+
+/* ｡･:*:･ﾟ★💕｡･:*:･ﾟ☆✨｡･:*:･ﾟ★💕｡･:*:･ﾟ☆✨｡･:*:･ﾟ★💕｡･:*:･ﾟ☆✨｡･:*:･ﾟ★💕｡･:*:･ﾟ☆✨｡･:*:･ﾟ★💕｡･:*:･ﾟ☆✨｡･:*:･ﾟ★💕｡･:*:･ﾟ☆✨ */
+/* NAV BAR */
+
+.nav {
+  width: 90%;
+  height: 100px;
+  font-size: 15px;
+  position: absolute;
+  margin-top: 1%;
+}
+
+.nav a {
+  color:white;
+  text-decoration: none;
+}
+
+.navlink {
+  width: 230px;
+}
+
+
+.navlinktext {
+    display: inline-block;
+}
+
+.navlinktext::after {
+  content: '';
+  width:100%;
+  height: 1px;
+  margin-top:4px;
+  background:white;
+  display:block;
+  transform: scaleX(0);
+  transition: transform 0.2s ease;
+
+}
+
+.navlinktext:hover::after {
+  transform: scaleX(1);
+
+}
+
+.pages {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.homelogo {
+  opacity: 80%;
+  transition: opacity 0.2s ease;
+  margin: 0px 20px;
+}
+
+.homelogo:hover {
+  opacity: 100%;
+}
+
+
+
+
+
+/* ｡･:*:･ﾟ★💕｡･:*:･ﾟ☆✨｡･:*:･ﾟ★💕｡･:*:･ﾟ☆✨｡･:*:･ﾟ★💕｡･:*:･ﾟ☆✨｡･:*:･ﾟ★💕｡･:*:･ﾟ☆✨｡･:*:･ﾟ★💕｡･:*:･ﾟ☆✨｡･:*:･ﾟ★💕｡･:*:･ﾟ☆✨ */
+/* SKILLS + EDUCATION */
+
+.skillseducation {
+  width: 50%;
+  height: 100%;
+  display: grid;
+  grid-template-areas: "mcmaster mcmaster"
+                       "waterloo waterloo"
+                       "skills releventcourses";
+  grid-gap: 20px;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: 1fr 1fr;
+
+}
+
+.skills {
+  width: 100%;
+  border:1px solid white;
+  color:white;
+  text-align: left;
+  grid-area: skills;
+  padding:25px;
+  padding-top: 55px;
+  background-color: rgba(1, 6, 20, .4);
+  background-image: url("./grid4.svg");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-wrap:wrap;
+  align-content: flex-start;
+}
+
+.releventcourses {
+  width: 100%;
+  border:1px solid white;
+  color:white;
+  text-align: left;
+  padding:25px;
+  grid-area: releventcourses;
+  padding-top: 55px;
+  background-color: rgba(1, 6, 20, .4);
+  background-image: url("./grid4.svg");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-wrap:wrap;
+  align-content: flex-start;
+}
+
+
+.skill {
+  background-color: white;
+  color:#010614;
+  margin: 4px;
+  height: 25px;
+  padding: 10px;
+  font-size: 11px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.waterloo, .mcmaster {
+  height: 100%;
+  color:white;
+  text-align: left;
+  padding-top: 40px;
+  padding-left: 40%;
+  font-size: 14px;
+  background-color: rgba(1, 6, 20, .4);
+  background-image: url("./grid4.svg");
+  background-position: center;
+  font-family: courier-std, monospace;
+  background-size: cover;
+}
+
+.mcmaster {
+  grid-area: mcmaster;
+}
+
+.waterloo {
+  grid-area: waterloo;
+}
+
+
+#programinfo {
+  width: 66%;
+  height: 100%;
+}
+
+.waterlootitle, .mcmastertitle, .skillstitle, .releventcoursestitle {
+  height:30px;
+
+  top:0px;
+  left:0px;
+  color:rgba(1, 6, 20, .6);
+  background-color: white;
+  font-size:17px;
+  position: absolute;
+  display: flex;
+  padding-left: 10px;
+  padding-right: 15px;
+  align-items: center;
+  font-family: 'theramin', monospace;
+}
+
+.mcmastertitle {
+  width: 33%;
+  height: 100%;
+  text-align: left;
+  font-size: 40px;
+  padding-left: 20px;
+
+}
+
+.waterlootitle {
+  text-align: left;
+  width: 33%;
+  height: 100%;
+  font-size: 40px;
+  padding-left: 20px;
+
+}
+
+#programname {
+  font-size: 25px;
+}
+
+
+.skills, .mcmaster, .waterloo, .releventcourses {
+  border: 1px solid white;
+	filter: drop-shadow(0 0 0.75rem white);
+	transition: .2s ease-in;
+}
+
+.skills:hover, .mcmaster:hover, .waterloo:hover, .releventcourses:hover {
+  filter: drop-shadow(0 0 1.2rem white);
+}
+
+/* ｡･:*:･ﾟ★💕｡･:*:･ﾟ☆✨｡･:*:･ﾟ★💕｡･:*:･ﾟ☆✨｡･:*:･ﾟ★💕｡･:*:･ﾟ☆✨｡･:*:･ﾟ★💕｡･:*:･ﾟ☆✨｡･:*:･ﾟ★💕｡･:*:･ﾟ☆✨｡･:*:･ﾟ★💕｡･:*:･ﾟ☆✨ */
+/* EXPERIENCE */
+
+.experience {
+  width: 50%;
+  height: 100%;
+  display: grid;
+  grid-template-areas: "exp1"
+                       "exp2"
+                       "exp3"
+                       "exp4";
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-columns: 1fr;
+  grid-gap: 20px;
+
+}
+
+.exp {
+  height: 100%;
+  border:1px solid white;
+  color:white;
+  text-align: left;
+  background-color: rgba(1, 6, 20, .4);
+  background-image: url("./grid4.svg");
+  background-position: center;
+  display: flex;
+}
+
+.exp {
+  border: 1px solid white;
+	filter: drop-shadow(0 0 0.75rem white);
+	transition:.2s ease-in;
+}
+
+.exp:hover {
+  filter: drop-shadow(0 0 1.2rem white);
+}
+
+.exptitle {
+  height:30px;
+  top:1px;
+  left:1px;
+
+  color:rgba(1, 6, 20, .6);
+  background-color: white;
+  font-size:17px;
+  position: absolute;
+  display: flex;
+  padding-left: 10px;
+  padding-right: 15px;
+  align-items: center;
+
+  font-family: 'theramin', monospace;
+  font-style: normal;
+  box-shadow:
+  0 0 0 2px white;
+}
+
+
+.expdetails {
+  padding: 50px 0px 0px 30px;
+  width: 30%;
+}
+
+.employer {
+  font-family: courier-std, monospace;
+  font-size: 20px;
+  padding:10px 0px;
+}
+
+.duration {
+  font-family: courier-std, monospace;
+  color: white;
+  font-size: 15px;
+}
+
+.explist {
+  margin-left: 0px;
+  width: 75%;
+  height: 100%;
+  display:flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-family: courier-std, monospace;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 10px;
+  font-size: 14px;
+  list-style-type: square;
+}
+
+
+/* ｡･:*:･ﾟ★💕｡･:*:･ﾟ☆✨｡･:*:･ﾟ★💕｡･:*:･ﾟ☆✨｡･:*:･ﾟ★💕｡･:*:･ﾟ☆✨｡･:*:･ﾟ★💕｡･:*:･ﾟ☆✨｡･:*:･ﾟ★💕｡･:*:･ﾟ☆✨｡･:*:･ﾟ★💕｡･:*:･ﾟ☆✨ */
+/* PROJECTS */
+
+.projects {
+  width: 50%;
+  height: 100%;
+  display: grid;
+  grid-template-areas: "proj1 proj2" 
+                       "proj3 proj4";
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+}
+
+
+.proj {
+  border:1px solid white;
+  color:white;
+  text-align: left;
+  background-color: rgba(1, 6, 20, .4);
+  background-image: url("./grid4.svg");
+  background-position: center;
+}
+
+.proj {
+  border: 1px solid white;
+	filter: drop-shadow(0 0 0.75rem white);
+	transition: .2s ease-in;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.projdetails {
+  position: absolute; 
+  bottom: 1px;
+  right: 1px;
+  width: 40%;
+  height: 50%;
+  padding: 15px;
+  font-size: 13px;
+  background-color: white;
+  color: #010614;
+  box-shadow:
+  0 0 0 2px white;
+}
+
+.projdetails ul {
+  list-style-type: square;
+}
+
+
+.projtitle {
+  height:30px;
+  top:1px;
+  left:1px;
+
+
+  color:rgba(1, 6, 20, .6);
+  background-color: white;
+  font-size:17px;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 10px;
+  padding-right: 15px;
+  font-family: 'theramin', monospace;
+  box-shadow:
+  0 0 0 2px white;
+}
+
+.proj:hover {
+  filter: drop-shadow(0 0 1.2rem white);
+}
+
+.thumb2 {
+  background-image: url("./wosthumb.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  width: 60%;
+  height: 60%;
+  opacity: 0.9;
+  border: 1px solid white;
+}
+
+.thumb1 {
+  background-image: url("./pmthumb.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 60%;
+  height: 60%;
+  opacity: 0.9;
+  border: 1px solid white;
+}
+
+.thumb3 {
+  background-image: url("./fcthumb.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  width: 60%;
+  height: 60%;
+  opacity: 0.9;
+  border: 1px solid white;
+}
+
+.thumb4 {
+  background-image: url("./misheggthumb.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 60%;
+  height: 60%;
+  opacity: 0.9;
+  border: 1px solid white;
+}
+
+
+/* ｡･:*:･ﾟ★💕｡･:*:･ﾟ☆✨｡･:*:･ﾟ★💕｡･:*:･ﾟ☆✨｡･:*:･ﾟ★💕｡･:*:･ﾟ☆✨｡･:*:･ﾟ★💕｡･:*:･ﾟ☆✨｡･:*:･ﾟ★💕｡･:*:･ﾟ☆✨｡･:*:･ﾟ★💕｡･:*:･ﾟ☆✨ */
+/* ABOUT */
+
+.about {
+  width: 50%;
+  height: 100%;
+  display: grid;
+  grid-template-areas: "bio selfie"
+                      "links links";
+  grid-gap: 20px;
+  grid-template-rows: 75% 25%;
+  grid-template-columns: 1fr 1fr;
+}
+
+
+.bio {
+  border:2px solid white;
+  color: white;
+  text-align: left;
+  padding:40px;
+  padding-top: 80px;
+  font-size: 14px;
+  grid-area: bio;
+  font-family: courier-std, monospace;
+  overflow:auto;
+  background-color: rgba(1, 6, 20, .4);
+  background-image: url("./grid4.svg");
+  background-position: center;
+  background-size: cover;
+}
+
+.bio span {
+  font-weight: 500;
+}
+
+.biotitle {
+  background-color: white;
+  color:rgba(1, 6, 20, .6);
+  left:0;
+  top:0;
+  height:30px;
+  font-size:17px;
+  position: absolute;
+  display: flex;
+  padding-left: 10px;
+  padding-right: 15px;
+  align-items: center;
+  font-family: 'theramin', monospace;
+  box-shadow:
+  0 0 0 2px white;
+}
+
+.links {
+  height: 80%;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 20% 80%;
+  gap: 20px 20px;
+  grid-area: links;
+}
+
+.resumetitle {
+  border: 1px solid white;
+  color: white;
+  background-color: rgba(1, 6, 20, .4);
+  opacity: 0.8;
+  display: flex;
+  font-family: 'theramin', monospace;
+  justify-content: center;
+  align-items: center;
+}
+
+.link {
+  background-color: white;
+  color:#010614;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  opacity: 0.8;
+  background-size: 25%;
+  background-repeat: no-repeat;
+  background-position: center center;
+
+}
+
+.link:hover{
+  opacity: 1;
+  cursor: pointer;
+}
+
+.link:active{
+  background: darken(#010614, 20%);
+}
+
+.selfie {
+  border:1px solid white;
+  background-image: url("./self.jpg");
+  background-position: center;
+  background-size: cover;
+  grid-area: selfie;
+}
+
+
+.tlcorner {
+  border-left: 1px solid white;
+  border-top: 1px solid white;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.trcorner {
+  border-right: 1px solid white;
+  border-top: 1px solid white;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.blcorner {
+  border-left: 1px solid white;
+  border-bottom: 1px solid white;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+}
+
+.brcorner {
+  border-right: 1px solid white;
+  border-bottom: 1px solid white;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+
+.bio, .link, .selfie {
+  border: 1px solid white;
+	filter: drop-shadow(0 0 0.75rem white);
+	transition:.2s  ease-in;
+}
+
+.bio:hover, .link:hover, .selfie:hover {
+  filter: drop-shadow(0 0 1.2rem white);
+}
+
