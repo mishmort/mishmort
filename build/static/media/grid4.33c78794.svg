@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg6786"
+   inkscape:version="1.1.1 (1:1.1+202109281949+c3084ef5ed)"
+   sodipodi:docname="grid4.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview6788"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="0.57192761"
+     inkscape:cx="78.681286"
+     inkscape:cy="560.38561"
+     inkscape:window-width="1920"
+     inkscape:window-height="1137"
+     inkscape:window-x="1920"
+     inkscape:window-y="27"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs6783" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       d="M 0,0 0,296.99999 M 52.916665,0 l 0,296.99999 M 105.83333,0 l 0,296.99999 M 158.75,0 l 0,296.99999 M 0,0 210,0 M 0,52.916665 l 210,0 M 0,105.83333 l 210,0 M 0,158.75 l 210,0 m -210,52.91666 210,0 m -210,52.91667 210,0"
+       style="fill:none;stroke:#010614;stroke-width:0.264583px;stroke-opacity:0.29021773"
+       id="path6790" />
+  </g>
+</svg>
