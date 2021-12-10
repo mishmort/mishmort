@@ -179,13 +179,13 @@ body {
 }
 
 .homelogo {
-  opacity: 100%;
+  /* opacity: 100%; */
   transition: opacity 0.2s ease;
   margin: 0px 20px;
 }
 
 .homelogo:hover {
-  opacity: 100%;
+  /* opacity: 100%; */
 }
 
 
