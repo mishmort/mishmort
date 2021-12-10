@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/mishmort/static/css/main.a66e8cd6.chunk.css",
-    "main.js": "/mishmort/static/js/main.3c6a408e.chunk.js",
-    "main.js.map": "/mishmort/static/js/main.3c6a408e.chunk.js.map",
+    "main.js": "/mishmort/static/js/main.64ee4dce.chunk.js",
+    "main.js.map": "/mishmort/static/js/main.64ee4dce.chunk.js.map",
     "runtime-main.js": "/mishmort/static/js/runtime-main.5a3a677c.js",
     "runtime-main.js.map": "/mishmort/static/js/runtime-main.5a3a677c.js.map",
     "static/js/2.700980c9.chunk.js": "/mishmort/static/js/2.700980c9.chunk.js",
@@ -23,6 +23,6 @@
     "static/js/runtime-main.5a3a677c.js",
     "static/js/2.700980c9.chunk.js",
     "static/css/main.a66e8cd6.chunk.css",
-    "static/js/main.3c6a408e.chunk.js"
+    "static/js/main.64ee4dce.chunk.js"
   ]
 }
