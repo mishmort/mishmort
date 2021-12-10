@@ -30,7 +30,6 @@ const SkillsEducation = () => {
                     <p className="skill">HTML</p>
                     <p className="skill">CSS</p>
                     <p className="skill">React</p>
-                    <p className="skill">Bootstrap</p>
                     <p className="skill">Java</p>
                     <p className="skill">Python</p>
                     <p className="skill">Processing</p>
@@ -43,7 +42,6 @@ const SkillsEducation = () => {
                     <p className="skill">Premiere Pro</p>
                     <p className="skill">UX</p>
                     <p className="skill">Typescript</p>
-                    <p className="skill">SpringBoot</p>
 
             </div>
 
@@ -53,7 +51,7 @@ const SkillsEducation = () => {
                 <p className="skill">Data Structures & Algorithms</p>
                 <p className="skill">Databases</p>
                 <p className="skill">Intro to Software Development</p>
-                <p className="skill">Intro To Programming</p>
+                <p className="skill">Information Security</p>
                 <p className="skill">Advanced Algorithms</p>
                 <p className="skill">Principles of Programming</p>
                 <p className="skill">Discrete Math</p>
