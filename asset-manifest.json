@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/mishmort/static/css/main.a66e8cd6.chunk.css",
-    "main.js": "/mishmort/static/js/main.0b79ba2a.chunk.js",
-    "main.js.map": "/mishmort/static/js/main.0b79ba2a.chunk.js.map",
+    "main.css": "/mishmort/static/css/main.3f0ca761.chunk.css",
+    "main.js": "/mishmort/static/js/main.b024d44c.chunk.js",
+    "main.js.map": "/mishmort/static/js/main.b024d44c.chunk.js.map",
     "runtime-main.js": "/mishmort/static/js/runtime-main.5a3a677c.js",
     "runtime-main.js.map": "/mishmort/static/js/runtime-main.5a3a677c.js.map",
     "static/js/2.700980c9.chunk.js": "/mishmort/static/js/2.700980c9.chunk.js",
     "static/js/2.700980c9.chunk.js.map": "/mishmort/static/js/2.700980c9.chunk.js.map",
     "index.html": "/mishmort/index.html",
-    "static/css/main.a66e8cd6.chunk.css.map": "/mishmort/static/css/main.a66e8cd6.chunk.css.map",
+    "static/css/main.3f0ca761.chunk.css.map": "/mishmort/static/css/main.3f0ca761.chunk.css.map",
     "static/js/2.700980c9.chunk.js.LICENSE.txt": "/mishmort/static/js/2.700980c9.chunk.js.LICENSE.txt",
     "static/media/Camisha_Mortensen_Resume.2a1edde5.pdf": "/mishmort/static/media/Camisha_Mortensen_Resume.2a1edde5.pdf",
     "static/media/codepen.88957c5d.svg": "/mishmort/static/media/codepen.88957c5d.svg",
@@ -22,7 +22,7 @@
   "entrypoints": [
     "static/js/runtime-main.5a3a677c.js",
     "static/js/2.700980c9.chunk.js",
-    "static/css/main.a66e8cd6.chunk.css",
-    "static/js/main.0b79ba2a.chunk.js"
+    "static/css/main.3f0ca761.chunk.css",
+    "static/js/main.b024d44c.chunk.js"
   ]
 }
