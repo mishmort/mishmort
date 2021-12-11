@@ -50,15 +50,17 @@ const Experience = () => {
         </div>
 
         <div className="exp exp4">
-            <div id="idolst" className="exptitle">VOLUNTEER DEVELOPER</div>
+            <div id="idolst" className="exptitle">DELTAHACKS 7</div>
 
             <div className="expdetails">
-                <div className="employer">Idol.st</div>
-                <div className="duration">11/21 - PRESENT</div>
+                <div className="employer">McMaster University</div>
+                <div className="duration">March 2021</div>
             </div>
 
             <ul className="explist">
-                <li>Helped maintain a popular fansite</li>&nbsp;
+                <li>Helped develop a flash card app for students</li>&nbsp;
+                <li>graphic design</li>&nbsp;
+                <li>front-end development</li>&nbsp;
             </ul>
         </div>
 
