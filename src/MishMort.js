@@ -16,7 +16,7 @@ function MishMort() {
       <Blur />
 
       <div className="main">
-        <Router>
+        <Router basename="/mishmort/">
           <Nav />
           <div className="content">
             <Switch>
