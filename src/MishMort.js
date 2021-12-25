@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { HashRouter as Router, Route, Switch } from "react-router-dom";
 import globelogo from "./logos/globe.svg";
 import "./MishMort.css";
 
@@ -41,7 +41,7 @@ function MishMort() {
                 <Experience />
               </Route>
 
-              <Route exact path="/msihmort/projects">
+              <Route exact path="/mishmort/projects">
                 <Projects />
               </Route>
 
