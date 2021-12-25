@@ -33,7 +33,7 @@ function MishMort() {
                 <Home />
               </Route> */}
 
-              <Route exact path="/mishmort">
+              <Route exact path="/">
                 <About />
               </Route>
 
