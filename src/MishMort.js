@@ -16,7 +16,7 @@ function MishMort() {
       <Blur />
 
       <div className="main">
-        <Router basename={process.env.PUBLIC_URL}>
+        <Router basename="/mishmort/">
           <Nav />
           <div className="content">
             <Switch>
