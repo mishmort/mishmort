@@ -20,7 +20,7 @@ function MishMort() {
           <Nav />
           <div className="content">
             <Switch>
-              <Route exact path="/mishmort/about">
+              <Route exact path="/about">
                 <About />
               </Route>
 
@@ -37,11 +37,11 @@ function MishMort() {
                 <About />
               </Route>
 
-              <Route exact path="//experience">
+              <Route exact path="/mishmort/experience">
                 <Experience />
               </Route>
 
-              <Route exact path="/mishmort/projects">
+              <Route exact path="/#/mishmort/projects">
                 <Projects />
               </Route>
 
