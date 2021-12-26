@@ -24,7 +24,7 @@ function MishMort() {
                 <About />
               </Route>
 
-              <Route exact path="/#/skillseducation">
+              <Route exact path="/skillseducation">
                 <SkillsEducation />
               </Route>
 
@@ -41,7 +41,7 @@ function MishMort() {
                 <Experience />
               </Route>
 
-              <Route exact path="/#/mishmort/projects">
+              <Route exact path="/projects">
                 <Projects />
               </Route>
 
