@@ -1,3 +1,3 @@
 ⛓️ MISHMORT ⛓️
 
-https://mishmort.github.io/mishmort/
+https://mishmort.net

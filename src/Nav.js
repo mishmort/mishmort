@@ -6,7 +6,7 @@ const Nav = () => {
 
     const location = useLocation()
 
-    const [timer, setTimer] = useState(location.pathname === "/" ? 16 : 0)
+    const [timer, setTimer] = useState(location.pathname === "/" ? 17 : 0)
 
     useEffect(() => {
         if (timer > 0) {
