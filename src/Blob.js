@@ -31,19 +31,36 @@ const Blob = ({id}) => {
         borderRadius: rndBorderRadius()
     }
 
-    const mov = (id) => {
+    const first = (id) => {
+
         anime({
             targets: ".blob-"+id,
             translateX: rnd(-200,200),
             translateY: rnd(-200,200),
             scale: rnd(1.5, 2),
-            duration: 15000,
+            duration: 500,
             easing: 'easeInOutQuad',
             complete: () => mov(id)
         })
     }
 
-    mov(id);
+    const mov = (id) => {
+
+
+
+        anime({
+            targets: ".blob-"+id,
+            translateX: rnd(-200,200),
+            translateY: rnd(-200,200),
+            scale: rnd(1.5, 2),
+            duration: 20000,
+            easing: 'easeInOutQuad',
+            complete: () => mov(id)
+        })
+    }
+
+    first(id)
+    // mov(id);
 
     return (
         <div 

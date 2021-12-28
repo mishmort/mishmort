@@ -15,6 +15,9 @@ const Projects = () => {
                         <li>PostgreSQL</li>
                     </ul>
 
+                    <a target="_blank" href="http://pestmapper-env.eba-2ypfqjyc.us-east-2.elasticbeanstalk.com/" ><button className="projlink">Visit</button></a>
+
+
                 </div>
             </div>
 

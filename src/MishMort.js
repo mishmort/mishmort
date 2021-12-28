@@ -1,16 +1,20 @@
 import { HashRouter as Router, Route, Switch } from "react-router-dom";
-import globelogo from "./logos/globe.svg";
+import {useRef} from 'react';
+import globelogo from "./assets/logos/globe.svg";
 import "./MishMort.css";
-
 import Blur from "./Blur";
 import Nav from "./Nav";
 import About from "./About";
+import Home from "./Home";
 import SkillsEducation from "./SkillsEducation";
 import Experience from "./Experience";
 import Projects from "./Projects";
 import NotFound from "./NotFound";
 
 function MishMort() {
+
+  let reloadtimer = useRef(true)
+
   return (
     <div className="mishmort">
       <Blur />
@@ -28,16 +32,11 @@ function MishMort() {
                 <SkillsEducation />
               </Route>
 
-              {/* COMING SOON */}
-              {/* <Route exact path="/">
-                <Home />
-              </Route> */}
-
               <Route exact path="/">
-                <About />
+                <Home reloadtimer={reloadtimer}/>
               </Route>
 
-              <Route exact path="/mishmort/experience">
+              <Route exact path="/experience">
                 <Experience />
               </Route>
 

@@ -1,8 +1,8 @@
-import Resumesvg from './logos/resume.svg'
-import Codepensvg from './logos/codepen.svg'
-import Githubsvg from './logos/github.svg'
-import Linkedinsvg from './logos/linkedin.svg'
-import Twittersvg from './logos/twitter.svg'
+import Resumesvg from './assets/logos/resume.svg'
+import Codepensvg from './assets/logos/codepen.svg'
+import Githubsvg from './assets/logos/github.svg'
+import Linkedinsvg from './assets/logos/linkedin.svg'
+import Twittersvg from './assets/logos/twitter.svg'
 import Resume from './Camisha_Mortensen_Resume.pdf'
 
 const About = () => {
@@ -62,7 +62,7 @@ const About = () => {
             <a  
                 className="link" 
                 target="_blank"
-                href="https://codepen.io/"
+                href="https://codepen.io/mishmort"
                 style={{backgroundImage: `url(${Codepensvg})` }}
             ></a>
 
