@@ -1,30 +1,28 @@
 {
   "files": {
-    "main.css": "/static/css/main.5ed09387.chunk.css",
-    "main.js": "/static/js/main.a09c8301.chunk.js",
-    "main.js.map": "/static/js/main.a09c8301.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.7111244a.js",
-    "runtime-main.js.map": "/static/js/runtime-main.7111244a.js.map",
-    "static/js/2.2301e104.chunk.js": "/static/js/2.2301e104.chunk.js",
-    "static/js/2.2301e104.chunk.js.map": "/static/js/2.2301e104.chunk.js.map",
-    "index.html": "/index.html",
-    "static/css/main.5ed09387.chunk.css.map": "/static/css/main.5ed09387.chunk.css.map",
-    "static/js/2.2301e104.chunk.js.LICENSE.txt": "/static/js/2.2301e104.chunk.js.LICENSE.txt",
-    "static/media/Camisha_Mortensen_Resume.9200cc20.pdf": "/static/media/Camisha_Mortensen_Resume.9200cc20.pdf",
-    "static/media/Interfaces.css": "/static/media/mouthbutton.f700fc12.svg",
-    "static/media/codepen.88957c5d.svg": "/static/media/codepen.88957c5d.svg",
-    "static/media/github.b8feec6f.svg": "/static/media/github.b8feec6f.svg",
-    "static/media/globe.506f1f55.svg": "/static/media/globe.506f1f55.svg",
-    "static/media/MishMort.css": "/static/media/wosthumb.755522e6.svg",
-    "static/media/linkedin.1fff2a6f.svg": "/static/media/linkedin.1fff2a6f.svg",
-    "static/media/noise.5c725507.jpg": "/static/media/noise.5c725507.jpg",
-    "static/media/resume.554ce713.svg": "/static/media/resume.554ce713.svg",
-    "static/media/twitter.97df7401.svg": "/static/media/twitter.97df7401.svg"
+    "main.css": "/mishmort/static/css/main.a35b62b9.chunk.css",
+    "main.js": "/mishmort/static/js/main.caa95834.chunk.js",
+    "main.js.map": "/mishmort/static/js/main.caa95834.chunk.js.map",
+    "runtime-main.js": "/mishmort/static/js/runtime-main.5a3a677c.js",
+    "runtime-main.js.map": "/mishmort/static/js/runtime-main.5a3a677c.js.map",
+    "static/js/2.700980c9.chunk.js": "/mishmort/static/js/2.700980c9.chunk.js",
+    "static/js/2.700980c9.chunk.js.map": "/mishmort/static/js/2.700980c9.chunk.js.map",
+    "index.html": "/mishmort/index.html",
+    "static/css/main.a35b62b9.chunk.css.map": "/mishmort/static/css/main.a35b62b9.chunk.css.map",
+    "static/js/2.700980c9.chunk.js.LICENSE.txt": "/mishmort/static/js/2.700980c9.chunk.js.LICENSE.txt",
+    "static/media/Camisha_Mortensen_Resume.2a1edde5.pdf": "/mishmort/static/media/Camisha_Mortensen_Resume.2a1edde5.pdf",
+    "static/media/codepen.88957c5d.svg": "/mishmort/static/media/codepen.88957c5d.svg",
+    "static/media/MishMort.css": "/mishmort/static/media/wosthumb.755522e6.svg",
+    "static/media/github.b8feec6f.svg": "/mishmort/static/media/github.b8feec6f.svg",
+    "static/media/globe.506f1f55.svg": "/mishmort/static/media/globe.506f1f55.svg",
+    "static/media/linkedin.1fff2a6f.svg": "/mishmort/static/media/linkedin.1fff2a6f.svg",
+    "static/media/resume.554ce713.svg": "/mishmort/static/media/resume.554ce713.svg",
+    "static/media/twitter.97df7401.svg": "/mishmort/static/media/twitter.97df7401.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.7111244a.js",
-    "static/js/2.2301e104.chunk.js",
-    "static/css/main.5ed09387.chunk.css",
-    "static/js/main.a09c8301.chunk.js"
+    "static/js/runtime-main.5a3a677c.js",
+    "static/js/2.700980c9.chunk.js",
+    "static/css/main.a35b62b9.chunk.css",
+    "static/js/main.caa95834.chunk.js"
   ]
 }
