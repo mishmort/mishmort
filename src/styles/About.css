@@ -1,0 +1,163 @@
+/* eventually make a bunch of these files  */
+
+/* ｡･:*:･ﾟ★💕｡･:*:･ﾟ☆✨｡･:*:･ﾟ★💕｡･:*:･ﾟ☆✨｡･:*:･ﾟ★💕｡･:*:･ﾟ☆✨｡･:*:･ﾟ★💕｡･:*:･ﾟ☆✨｡･:*:･ﾟ★💕｡･:*:･ﾟ☆✨｡･:*:･ﾟ★💕｡･:*:･ﾟ☆✨ */
+/* ABOUT */
+
+/* .about {
+  display: grid;
+  grid-template-areas:
+    "bio selfie"
+    "links links";
+  grid-gap: 10px;
+  grid-template-rows: 3fr 1fr;
+  grid-template-columns: 1fr 1fr;
+} */
+
+
+/* FOR MOBILE */
+.bio {
+  border: 2px solid white;
+  color: white;
+  text-align: left;
+  padding: 20px;
+  padding-top: 70px;
+  font-size: 12px;
+  line-height: 15px;
+  grid-area: bio;
+  /* font-family: courier-std, monospace; */
+  overflow: auto;
+  background-color: rgba(1, 6, 20, 0.4);
+  background-image: url("./assets/grid4.svg");
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+/* FOR DESKTOP */
+@media only screen and (min-width: 830px) {
+  .bio {
+    font-size: 13px;
+    padding: 40px;
+  }
+}
+
+.bio span {
+  font-weight: 500;
+}
+
+.biotitle {
+  background-color: white;
+  color: rgba(1, 6, 20, 0.6);
+  left: 0;
+  top: 0;
+  height: 30px;
+  font-size: 17px;
+  position: absolute;
+  display: flex;
+  padding-left: 10px;
+  padding-right: 15px;
+  align-items: center;
+  font-family: "theramin", monospace;
+  box-shadow: 0 0 0 2px white;
+}
+
+/* .links {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 1fr 3fr;
+  gap: 10px 10px;
+  grid-area: links;
+} */
+
+.resumetitle {
+  border: 1px solid white;
+  color: white;
+  background-color: rgba(1, 6, 20, 0.4);
+  opacity: 0.8;
+  display: flex;
+  font-family: "theramin", monospace;
+
+  justify-content: center;
+  align-items: center;
+}
+
+/* .link {
+  background-color: white;
+  color: #010614;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  opacity: 0.8;
+  background-size: 25%;
+  background-repeat: no-repeat;
+  background-position: center center;
+} */
+
+.link:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.link:active {
+  background: darken(#010614, 20%);
+}
+
+.selfie {
+  border: 1px solid white;
+  background-image: url("./assets/selfie.jpg");
+  background-position: center;
+  background-size: cover;
+  grid-area: selfie;
+}
+
+.tlcorner {
+  border-left: 1px solid white;
+  border-top: 1px solid white;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  /* border-top-left-radius: 3px; */
+}
+
+.trcorner {
+  border-right: 1px solid white;
+  border-top: 1px solid white;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  /* border-top-right-radius: 3px; */
+}
+
+.blcorner {
+  border-left: 1px solid white;
+  border-bottom: 1px solid white;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  /* border-bottom-left-radius: 3px; */
+}
+
+.brcorner {
+  border-right: 1px solid white;
+  border-bottom: 1px solid white;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  /* border-bottom-right-radius: 3px; */
+}
+
+.bio,
+.link,
+.selfie {
+  border: 1px solid white;
+  /* border-radius: 3px; */
+  filter: drop-shadow(0 0 0.75rem white);
+  transition: 0.2s ease-in;
+}
+
+.bio:hover,
+.link:hover,
+.selfie:hover {
+  filter: drop-shadow(0 0 1.2rem white);
+}

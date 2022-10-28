@@ -1,0 +1,499 @@
+@font-face {
+  font-family: "HACKER";
+  src: local("HACKER"), url("./assets/HACKER.otf") format("opentype");
+}
+
+.stat {
+  color: white;
+  text-align: left;
+  /* background-color: rgba(1, 6, 20, 0.4); */
+  font-size: 20px;
+  /* overflow: hidden; */
+  /* opacity: 100%; */
+  /* display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: content-box; */
+  /* display: block; */
+  padding: 10px;
+}
+
+.innerStat {
+  width: 100%;
+  height: 100%;
+  /* background-color: salmon; */
+  /* border: 1px solid white; */
+}
+
+.logoAni {
+  background-image: url("./assets/mishmortlogo.svg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 40%;
+  animation: flicker 3s ease-in-out;
+}
+
+@keyframes flicker {
+  0%,
+  2%,
+  35%,
+  37%,
+  39%,
+  41%,
+  100% {
+    opacity: 1;
+  }
+
+  1%,
+  3%,
+  34%,
+  36%,
+  38%,
+  40% {
+    opacity: 0;
+  }
+}
+
+/* ｡･:*:･ﾟ★💕｡･:*:･ﾟ☆✨｡･:*:･ﾟ★💕｡･:*:･ﾟ☆✨｡･:*:･ﾟ★💕｡･:*:･ﾟ☆✨｡･:*:･ﾟ★💕｡･:*:･ﾟ☆✨｡･:*:･ﾟ★💕｡･:*:･ﾟ☆✨｡･:*:･ﾟ★💕｡･:*:･ﾟ☆✨ */
+/* CALCULATOR */
+
+.innerCalculator {
+  width: 100%;
+  height: 100%;
+}
+
+.MuiSlider-root,
+.thicknessbox,
+.calcenter,
+.calcclear,
+.calcdot,
+.calcadd,
+.calcsub,
+.calcmult,
+.calcdiv,
+.clearcanvas,
+.thicknessText,
+.calcresults,
+.avatarButton,
+.bodyPartButtons button,
+.innerCalculator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.numberbuttongrid {
+  width: 100%;
+  height: 100%;
+  font-family: "HACKER";
+  font-size: 12px;
+  /* display: grid;
+
+  why tf isnt this working
+  grid-template-areas:
+    "num9 num8 num7"
+    "num6 num5 num4"
+    "num3 num2 num1"
+    "num0";
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr; */
+}
+
+.calcadd,
+.calcsub,
+.calcdiv,
+.calcmult,
+.calcdot,
+.calcbutton {
+  width: 40px;
+  background-color: transparent;
+  z-index: 1;
+  color: white;
+}
+
+.calcresults,
+.calcclear,
+.calcenter {
+  width: 100%;
+  background-color: transparent;
+  z-index: 1;
+  color: white;
+}
+
+.calcadd:hover,
+.calcsub:hover,
+.calcdiv:hover,
+.calcmult:hover,
+.calcdot:hover,
+.calcbutton:hover,
+.calcclear:hover,
+.calcenter:hover,
+.calcbutton:hover {
+  background-color: white;
+  color: #010614;
+}
+
+.calcresults,
+.calcresult,
+.calcclear,
+.calcadd,
+.calcsub,
+.calcdiv,
+.calcmult,
+.calcdot,
+.calcenter {
+  border: 1px solid white;
+  height: 40px;
+}
+
+.innercalcbutton {
+  line-height: 5px;
+}
+
+.calcbutton {
+  position: relative;
+  background: linear-gradient(
+    -45deg,
+    transparent 10%,
+    white 10%,
+    white 12%,
+    transparent 1%
+  );
+  border-top: 1px solid white;
+  border-left: 1px solid white;
+  width: 40px;
+  height: 40px;
+}
+
+.calcbutton:hover {
+  background: linear-gradient(-45deg, transparent 5px, white 5px);
+}
+
+.calcbutton:after {
+  content: " ";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 30px;
+  height: 1px;
+  background-color: white;
+}
+
+.calcbutton:before {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 1px;
+  height: 30px;
+  background-color: white;
+}
+
+.calcresults {
+  font-size: 14px;
+  font-family: "HACKER";
+}
+
+/* ｡･:*:･ﾟ★💕｡･:*:･ﾟ☆✨｡･:*:･ﾟ★💕｡･:*:･ﾟ☆✨｡･:*:･ﾟ★💕｡･:*:･ﾟ☆✨｡･:*:･ﾟ★💕｡･:*:･ﾟ☆✨｡･:*:･ﾟ★💕｡･:*:･ﾟ☆✨｡･:*:･ﾟ★💕｡･:*:･ﾟ☆✨ */
+/* AVATAR STYLING */
+
+.innerAvatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.buttonsAvatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  width: 100%;
+  height: 65%;
+  margin-bottom: 3px;
+  margin-top: 3px;
+  /* margin: 5px 0px; */
+}
+
+.avatarWindow {
+  width: 120px;
+  height: 120px;
+  border: 1px solid white;
+  overflow: hidden;
+  position: relative;
+  background-color: transparent;
+  /* margin-top: 20px; */
+}
+
+.avatarButton {
+  z-index: 1;
+  /* border-left: 10px solid yellowgreen;
+  border-right: 10px solid salmon;
+  border-bottom: 10px solid cornflowerblue;
+  border-top: 10px solid gold; */
+  box-sizing: content-box;
+
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+  font-size: 2em;
+  height: 39px;
+  width: 39px;
+  position: relative;
+  padding: 0px;
+}
+
+.chevron {
+  position: absolute;
+  top: -7px;
+}
+
+.leftAvatar {
+  margin-right: 1px;
+}
+
+.rightAvatar {
+  margin-left:1px;
+}
+
+.bodyPartButton {
+  width: 100%;
+  height: 100%;
+}
+.bodyPartButtons {
+  width: 180px;
+  z-index: 2;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.bodyPartButton {
+  z-index: 3;
+  width: 30px;
+  height: 30px;
+  padding: 0px;
+}
+
+.avatarButton:hover {
+  background-color: white;
+  color: #010614b8;
+}
+
+.avatarTitle {
+  font-size: 12px;
+}
+
+.avatarTitle,
+.numbers1 {
+  font-family: "HACKER";
+}
+
+.numbers1,
+.numbers2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 180px;
+}
+
+.number2,
+.number1 {
+  width: 30px;
+}
+
+.number1 {
+  font-size: 5px;
+  text-align: center;
+}
+
+.number2 {
+  text-align: center;
+  font-size: 8px;
+  font-family: "GT Pressura Mono";
+}
+
+.highlighter {
+  position: absolute;
+  width: 60px;
+  height: 30px;
+  opacity: 0.3;
+  background-color: white;
+}
+
+.highlighter::after {
+  content: "";
+  width: 60px;
+  height: 30px;
+  opacity: 1;
+  border: 4px dashed red;
+  display: inline-block;
+}
+
+.dice {
+  background-image: url("./assets/dice.png");
+  width: 30px;
+  height: 30px;
+  /* border: 1px solid white; */
+  background-size: cover;
+  margin: -40px 0px 10px 8px;
+  z-index: 1;
+}
+
+.rightbuttondice {
+  display: flex;
+  flex-direction: column;
+}
+
+.hairbutton {
+  mask: url("./assets/hairbutton.svg") no-repeat;
+
+  background: white;
+
+  mask-size: cover;
+}
+
+.eyesbutton {
+  mask: url("./assets/eyesbutton.svg") no-repeat;
+
+  background: white;
+
+  mask-size: cover;
+}
+
+.mouthbutton {
+  mask: url("./assets/mouthbutton.svg") no-repeat;
+
+  background: white;
+
+  mask-size: cover;
+}
+
+.hatbutton {
+  mask: url("./assets/hatbutton.svg") no-repeat;
+
+  background: white;
+
+  mask-size: cover;
+}
+
+.selectedBodyPartButton {
+  background: #010614;
+}
+
+/* button .selectedBodyPartButton:after {
+  content: " ";
+  display: block;
+  background-color: aquamarine;
+  width: 39px;
+  height: 39px;
+} */
+
+.bodyPartButtons button {
+  border: 1px solid white;
+  background-color: transparent;
+  box-sizing: content-box;
+  padding: 0px;
+  width: 39px;
+  height: 39px;
+}
+
+.bodyPartButtons button:hover {
+  border: 1px solid white;
+  background-color: white;
+}
+
+/* ｡･:*:･ﾟ★💕｡･:*:･ﾟ☆✨｡･:*:･ﾟ★💕｡･:*:･ﾟ☆✨｡･:*:･ﾟ★💕｡･:*:･ﾟ☆✨｡･:*:･ﾟ★💕｡･:*:･ﾟ☆✨｡･:*:･ﾟ★💕｡･:*:･ﾟ☆✨｡･:*:･ﾟ★💕｡･:*:･ﾟ☆✨ */
+/* DRAW */
+
+.phwrap,
+.innerCanvas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  width: 100%;
+  height: 100%;
+}
+
+.canvas {
+  z-index: 1;
+  border: 1px solid white;
+}
+
+.phwrap {
+  margin-top: -55px;
+  width: 140px;
+  height: 140px;
+  position: absolute;
+}
+
+.ph {
+  background-color: white;
+  position: absolute;
+}
+
+.phx {
+  width: 50px;
+  height: 2px;
+}
+
+.phy {
+  width: 2px;
+  height: 50px;
+}
+
+.MuiSlider-thumb,
+.MuiSlider-thumb:before {
+  color: white;
+  width: 10px !important;
+  height: 10px !important;
+  border-radius: 0px !important;
+}
+.MuiSlider-rail {
+  color: rgba(255, 255, 255, 0.629);
+}
+.MuiSlider-track {
+  color: white;
+}
+
+.MuiSlider-root {
+  padding: 0px !important;
+  width: 100% !important;
+  padding-top: 5px !important;
+}
+
+.thicknessText {
+  width: 100%;
+  padding: 3px 0px;
+  flex-direction: row;
+  justify-content: space-between;
+  font-family: "GT Pressura Mono";
+  font-size: 10px;
+}
+.thicknessbox {
+  border: 1px solid white;
+  padding: 3px;
+  width: 20px;
+  height: 20px;
+}
+
+.MuiSlider-thumb.Mui-focusVisible,
+.MuiSlider-thumb:hover {
+  box-shadow: none !important;
+}
+
+.clearcanvas {
+  z-index: 1;
+  font-family: "HACKER";
+  font-size: 5px;
+  margin-top: 3px;
+  color: white;
+  width: 100%;
+  height: 20px;
+  border: 1px solid white;
+}

@@ -27,6 +27,7 @@ const Blob = ({id}) => {
         left: rnd(0,100)+"%",
         transform: 'scale('+s+')',
         backgroundColor: color,
+        opacity: ".5",
         position: "absolute",
         borderRadius: rndBorderRadius()
     }

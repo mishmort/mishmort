@@ -1,68 +1,159 @@
+import { device, MishMortContext } from "./MishMort";
+import { useContext } from "react";
+
 const SkillsEducation = () => {
+  const { currentDevice } = useContext(MishMortContext);
+  const skills = [
+    "TypeScript",
+    "JavaScript",
+    "React",
+    "Node",
+    "HTML",
+    "CSS",
+    "Java",
+    "Python",
+    "Kotlin",
+    "Haskell",
+    "Figma",
+    "Illustrator",
+    "Photoshop",
+    "After Effects",
+    "UX",
+    "WordPress",
+    "Processing",
+  ];
 
-    return ( 
+  const courses = [
+    "Databases",
+    ["Software", <br />, "Development"],
+    ["Information", <br />, "Security"],
+    ["Principles", <br />, "of Programming"],
+    ["Functional", <br />, "Programming"],
+    ["Computer", <br />, " Architecture"],
+    ["Data Structures", <br />, "& Algorithms"],
+    ["Discrete", <br />, "Math"],
+  ];
 
-    <div className="skillseducation">
+  const classes = {
+    skillseducation: {
+      display: "grid",
+      gridTemplateAreas: ` "mcmaster mcmaster"
+          "waterloo waterloo"
+          "skills releventcourses"`,
+      gridGap: "10px",
+      gridTemplateRows: "1fr 1fr 1fr",
+      gridTemplateColumns: "1fr 1fr",
+    },
 
-                <div className="mcmaster">
-                <div className="mcmastertitle">MCMASTER UNIVERSITY</div>
+    skillcourse: {
+      backgroundColor: "white",
+      color: "#010614",
+      fontSize: currentDevice === device.MOBILE ? "8px" : "14px",
+      fontFamily: "GT Pressura Mono",
+      fontWeight: currentDevice === device.MOBILE ? "600" : "200",
+      display: "flex",
+      justifyContent: "center",
+      alignItems: "center",
+      padding: "5px",
+      margin:
+        currentDevice !== device.DESKTOP
+          ? "0px 1px 1px 0px"
+          : "0px 5px 5px 0px",
+    },
+    skillscourses: {
+      width: "100%",
+      color: "white",
+      textAlign: "left",
+      padding: "40px 10px 0px 5px",
+      display: "flex",
+      flexWrap: "wrap",
+      alignContent: "flex-start",
+    },
 
-               <div id="programname"> B.Sc.<br/>Computer Science<br/></div><br/> <br/>
-               <div id="programinfo">Expected Graduation: April 2023 <br/><br/>
-               GPA: 3.4</div>
+    mcmasterwaterloo: {
+      color: "white",
+      textAlign: "left",
+      fontSize: "14px",
+      display: "flex",
+      alignItems: "center",
+      justifyContent: "center",
+      flexDirection: "row",
+      fontFamily: "GT Pressura Mono",
+    },
+  };
 
+  return (
+    <div
+      className={
+        currentDevice === device.DESKTOP ? "landingpageDESKTOP" : "landingpage"
+      }
+      style={classes.skillseducation}
+    >
 
-            </div>
-            <div className="waterloo">
-                <div className="waterlootitle">UNIVERSITY OF WATERLOO</div>
+      <div className="mcmaster gridbg element" style={classes.mcmasterwaterloo}>
+        <div className="mcmastertitle">MCMASTER UNIVERSITY</div>
+        <div id="programname">
+          B.Sc.
+          <br />
+          Computer Science
+          <br />
+        </div>
+        <br /> <br />
+        <div id="programinfo">
+          Expected Graduation:
+          <br />
+          <br />
+          APRIL 2024 <br />
+          <br />
+          <br />
+          <br />
+          GPA: 3.4
+        </div>
+        {/* </div> */}
+      </div>
+      <div className="waterloo gridbg element" style={classes.mcmasterwaterloo}>
+        <div className="waterlootitle">UNIVERSITY OF WATERLOO</div>
+        <div id="programname">
+          Global Business <br />& Digial <br />
+          Arts
+        </div>
+        <br /> <br />
+        <div id="programinfo">
+          SEPT 2016 - APRIL 2018
+          <br /> <br />
+          <br />
+          <br />
+          GPA: 4.0
+        </div>
+      </div>
 
-                <div id="programname">Global Business <br/>& Digial Arts </div> <br/> <br/>
-                <div id="programinfo">September 2018 - April 2023 <br/> <br/>
-               GPA: 4.0</div>
+      <div className="skills gridbg element" style={classes.skillscourses}>
+        <div className=" title">SKILLS</div>
+        {skills.map((skill) => {
+          return (
+            <p className="skill" style={classes.skillcourse}>
+              {skill}
+            </p>
+          );
+        })}
+      </div>
 
-            </div>
+      <div
+        className="releventcourses gridbg element"
+        style={classes.skillscourses}
+      >
+        <div className=" title">RELEVENT COURSES</div>
 
+        {courses.map((course) => {
+          return (
+            <p className="course" style={classes.skillcourse}>
+              {course}
+            </p>
+          );
+        })}
+      </div>
+    </div>
+  );
+};
 
-            <div className="skills">
-                <div className="skillstitle">SKILLS</div>
-
-                    <p className="skill">JavaScript</p>
-                    <p className="skill">HTML</p>
-                    <p className="skill">CSS</p>
-                    <p className="skill">React</p>
-                    <p className="skill">Java</p>
-                    <p className="skill">Python</p>
-                    <p className="skill">Processing</p>
-                    <p className="skill">SQL</p>
-                    <p className="skill">Haskell</p>
-                    <p className="skill">WordPress</p>
-                    <p className="skill">Illustrator</p>
-                    <p className="skill">PhotoShop</p>
-                    <p className="skill">After Effects</p>
-                    <p className="skill">Premiere Pro</p>
-                    <p className="skill">UX</p>
-                    <p className="skill">Typescript</p>
-
-            </div>
-
-            <div className="releventcourses">
-                <div className="releventcoursestitle">RELEVENT COURSES</div>
-
-                <p className="skill">Data Structures & Algorithms</p>
-                <p className="skill">Databases</p>
-                <p className="skill">Intro to Software Development</p>
-                <p className="skill">Information Security</p>
-                <p className="skill">Advanced Algorithms</p>
-                <p className="skill">Principles of Programming</p>
-                <p className="skill">Discrete Math</p>
-                <p className="skill">Computer Architecture</p>
-
-            </div>
-
-    </div> 
-    
-    
-    );
-}
- 
 export default SkillsEducation;
