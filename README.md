@@ -2,4 +2,4 @@
 
 https://mishmort.net
 
-an expiramental little site
+an experimental little site
