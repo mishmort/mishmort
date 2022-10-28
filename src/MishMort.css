@@ -1,6 +1,3 @@
-@import url("https://use.typekit.net/lzw7xmq.css");
-@import url("http://fonts.cdnfonts.com/css/gt-pressura-mono");
-
 @font-face {
   font-family: "theramin";
   src: local("theramin"), url("./assets/theramin.ttf") format("truetype");
@@ -9,6 +6,12 @@
 @font-face {
   font-family: "HACKER";
   src: local("HACKER"), url("./assets/HACKER.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "GT Pressura Mono";
+  src: local("GT Pressura Mono"),
+    url("./assets/GTPressuraMono.otf") format("opentype");
 }
 
 /* ｡･:*:･ﾟ★💕｡･:*:･ﾟ☆✨｡･:*:･ﾟ★💕｡･:*:･ﾟ☆✨｡･:*:･ﾟ★💕｡･:*:･ﾟ☆✨｡･:*:･ﾟ★💕｡･:*:･ﾟ☆✨｡･:*:･ﾟ★💕｡･:*:･ﾟ☆✨｡･:*:･ﾟ★💕｡･:*:･ﾟ☆✨ */
@@ -69,7 +72,7 @@ body {
 }
 
 .gridbg::after {
-  content: "";
+  content: " ";
   position: absolute;
   top: 0;
   left: 0;
@@ -701,9 +704,7 @@ body {
 }
 
 .waterlootitle,
-.mcmastertitle
-/* .skillstitle,
-.releventcoursestitle  */ {
+.mcmastertitle {
   height: 27px;
   top: 0px;
   left: 0px;
@@ -757,30 +758,51 @@ body {
 }
 
 #programinfo {
-  width: 30%;
   font-size: 9px;
+  padding-left: 45%;
   font-family: "GT Pressura Mono", sans-serif;
   font-weight: 300;
 }
 
 @media only screen and (min-width: 550px) {
   #programinfo {
-    width: 40%;
+    width: 100%;
     font-size: 18px;
+    padding-left: 35%;
     font-family: "GT Pressura Mono", sans-serif;
   }
 }
 
 #programname {
   padding-left: 45%;
-  width: 20;
+  width: 30%;
   font-family: "GT Pressura Mono", sans-serif;
 }
 @media only screen and (min-width: 550px) {
   #programname {
+    width: 100%;
     font-size: 25px;
-    padding-left: 40%;
+    padding-left: 35%;
+    font-weight: 100 !important;
     font-family: "GT Pressura Mono", sans-serif;
+  }
+}
+
+.programnameinfo {
+  width: 80%;
+  max-height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+@media only screen and (min-width: 550px) {
+  .programnameinfo {
+    width: 80%;
+    max-height: 100%;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: space-evenly; */
   }
 }
 
@@ -861,7 +883,6 @@ body {
     flex-direction: column;
     text-align: left;
     font-family: "GT Pressura Mono";
-
   }
 }
 
@@ -890,8 +911,6 @@ body {
   font-size: 10px;
 }
 
-
-
 .projlink {
   width: 100%;
   height: 25px;
@@ -919,7 +938,6 @@ body {
   transition: filter 0.3s;
   /* width: 1%; */
 }
-
 
 .thumb {
   filter: grayscale(100%);

@@ -70,7 +70,7 @@ const Home = () => {
       >
         {currentDevice !== device.DESKTOP ? (
           <div className="homeMobile element gridbg">
-            ⛓️ THIS PAGE IS BEST VIEWED ON A LARGER SCREEN ⛓️ <br/> 
+            ⛓️ THIS IS AN EXPERIMENTAL PAGE, BEST VIEWED ON A LARGER SCREEN ⛓️ <br/> 
             please check out the rest of the site
           </div>
         ) : (

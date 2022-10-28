@@ -1,6 +1,7 @@
 import { Link, useLocation } from "react-router-dom";
 import { device, MishMortContext } from "./MishMort";
 import { useState, useEffect, useContext } from "react";
+import logo from './assets/mishmortlogo.svg';
 // import { isMobile, isTablet, isDesktop } from "./MishMort";
 
 const Nav = () => {
@@ -70,7 +71,7 @@ const Nav = () => {
           </Link>
           <Link className="navlink homelogo" to="/" style={classes.navlink}>
             <img
-              src="mishmortlogo.svg"
+              src={logo}
               alt="mishmort logo"
               style={classes.mishmortlogo}
             />

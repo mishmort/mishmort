@@ -37,7 +37,8 @@ const SkillsEducation = () => {
   const classes = {
     skillseducation: {
       display: "grid",
-      gridTemplateAreas: ` "mcmaster mcmaster"
+      gridTemplateAreas: ` 
+          "mcmaster mcmaster"
           "waterloo waterloo"
           "skills releventcourses"`,
       gridGap: "10px",
@@ -48,9 +49,9 @@ const SkillsEducation = () => {
     skillcourse: {
       backgroundColor: "white",
       color: "#010614",
-      fontSize: currentDevice === device.MOBILE ? "8px" : "14px",
+      fontSize: currentDevice === device.MOBILE ? "8px" : "12px",
       fontFamily: "GT Pressura Mono",
-      fontWeight: currentDevice === device.MOBILE ? "600" : "200",
+      fontWeight: currentDevice === device.MOBILE ? "600" : "100",
       display: "flex",
       justifyContent: "center",
       alignItems: "center",
@@ -64,7 +65,7 @@ const SkillsEducation = () => {
       width: "100%",
       color: "white",
       textAlign: "left",
-      padding: "40px 10px 0px 5px",
+      padding: "60px 30px 20px 25px",
       display: "flex",
       flexWrap: "wrap",
       alignContent: "flex-start",
@@ -89,41 +90,35 @@ const SkillsEducation = () => {
       }
       style={classes.skillseducation}
     >
-
       <div className="mcmaster gridbg element" style={classes.mcmasterwaterloo}>
         <div className="mcmastertitle">MCMASTER UNIVERSITY</div>
-        <div id="programname">
-          B.Sc.
-          <br />
-          Computer Science
-          <br />
+        <div className="programnameinfo">
+          <div id="programname">
+            B.Sc.
+            <br />
+            Computer Science
+          </div>
+          <br/>
+          <div id="programinfo">
+            Expected Graduation: APRIL 2024
+            <br />
+            GPA: 3.4
+          </div>
         </div>
-        <br /> <br />
-        <div id="programinfo">
-          Expected Graduation:
-          <br />
-          <br />
-          APRIL 2024 <br />
-          <br />
-          <br />
-          <br />
-          GPA: 3.4
-        </div>
-        {/* </div> */}
       </div>
       <div className="waterloo gridbg element" style={classes.mcmasterwaterloo}>
         <div className="waterlootitle">UNIVERSITY OF WATERLOO</div>
-        <div id="programname">
-          Global Business <br />& Digial <br />
-          Arts
-        </div>
-        <br /> <br />
-        <div id="programinfo">
-          SEPT 2016 - APRIL 2018
-          <br /> <br />
-          <br />
-          <br />
-          GPA: 4.0
+
+        <div className="programnameinfo">
+          <div id="programname">
+            Global Business <br />& Digial Arts
+          </div>
+          <br/>
+          <div id="programinfo">
+            SEPT 2016 - APRIL 2018
+            <br />
+            GPA: 4.0
+          </div>
         </div>
       </div>
 

@@ -32,10 +32,9 @@ const exps = {
     employer: "Fashion for Change",
     duration: "11/17 - 04/18",
     explist: [
-      "Created animated advertisements and graphics",
-      "Social Media Management",
       "Programmed an interactive display allowing audience members to interact with the stage during the live show",
-      "Took photos, shot video and edited footage for promotions",
+      "Created animated advertisements and graphics, Took photos, shot video and edited footage for promotions",
+      "Social Media Management",
     ],
   },
   exp2: {
@@ -160,13 +159,6 @@ const Exp = ({ exps, expnum }) => {
       paddingBottom: "5px",
     },
 
-    // employer: {
-    //   fontFamily: "GT Pressura Mono"
-    // },
-
-    // duration: {
-    //   fontFamily: "GT Pressura Mono"
-    // },
   };
 
   const exp = "exp" + expnum;
@@ -185,8 +177,12 @@ const Exp = ({ exps, expnum }) => {
             : classes.expdetails
         }
       >
-        <div className="employer" style={classes.employer}>{exps[exp].employer}</div>
-        <div className="duration" style={classes.duration}>{exps[exp].duration}</div>
+        <div className="employer" style={classes.employer}>
+          {exps[exp].employer}
+        </div>
+        <div className="duration" style={classes.duration}>
+          {exps[exp].duration}
+        </div>
       </div>
 
       <ul
@@ -209,7 +205,6 @@ const Exp = ({ exps, expnum }) => {
               >
                 {exps[exp].explist[explistnum]}
               </li>
-              {/* &nbsp; */}
             </span>
           );
         })}
