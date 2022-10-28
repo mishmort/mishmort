@@ -1,7 +1,7 @@
 import { Link, useLocation } from "react-router-dom";
 import { device, MishMortContext } from "./MishMort";
 import { useState, useEffect, useContext } from "react";
-import logo from './assets/mishmortlogo.svg';
+import logo from "./assets/mishmortlogo.svg";
 // import { isMobile, isTablet, isDesktop } from "./MishMort";
 
 const Nav = () => {
@@ -48,9 +48,7 @@ const Nav = () => {
       alignItems: "center",
     },
 
-    mishmortlogo: {
-      width: "50px",
-    },
+    mishmortlogo: {},
   };
 
   return (
@@ -73,6 +71,7 @@ const Nav = () => {
             <img
               src={logo}
               alt="mishmort logo"
+              width="30px"
               style={classes.mishmortlogo}
             />
           </Link>
