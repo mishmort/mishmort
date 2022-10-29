@@ -4,34 +4,34 @@ import { useContext } from "react";
 const SkillsEducation = () => {
   const { currentDevice } = useContext(MishMortContext);
   const skills = [
-    "TypeScript",
-    "JavaScript",
-    "React",
-    "Node",
+    "typescript",
+    "javascript",
+    "react",
+    "node",
     "HTML",
     "CSS",
-    "Java",
-    "Python",
-    "Kotlin",
-    "Haskell",
-    "Figma",
-    "Illustrator",
-    "Photoshop",
-    "After Effects",
+    "java",
+    "python",
+    "kotlin",
+    "haskell",
+    "figma",
+    "illustrator",
+    "photoshop",
+    "after effects",
     "UX",
-    "WordPress",
-    "Processing",
+    "wordpress",
+    "processing",
   ];
 
   const courses = [
-    "Databases",
-    ["Software", <br />, "Development"],
-    ["Information", <br />, "Security"],
-    ["Principles", <br />, "of Programming"],
-    ["Functional", <br />, "Programming"],
-    ["Computer", <br />, " Architecture"],
-    ["Data Structures", <br />, "& Algorithms"],
-    ["Discrete", <br />, "Math"],
+    "databases",
+    ["software", <br />, "development"],
+    ["information", <br />, "security"],
+    ["principles", <br />, "of programming"],
+    ["functional", <br />, "programming"],
+    ["computer", <br />, " architecture"],
+    ["data structures", <br />, "& algorithms"],
+    ["discrete", <br />, "math"],
   ];
 
   const classes = {
@@ -97,10 +97,12 @@ const SkillsEducation = () => {
             B.Sc.
             <br />
             Computer Science
+            <br />
+            <br />
           </div>
-          <br/>
+          <br />
           <div id="programinfo">
-            Expected Graduation: APRIL 2024
+            expected graduation: 04/24
             <br />
             GPA: 3.4
           </div>
@@ -113,9 +115,10 @@ const SkillsEducation = () => {
           <div id="programname">
             Global Business <br />& Digial Arts
           </div>
-          <br/>
+
           <div id="programinfo">
-            SEPT 2016 - APRIL 2018
+            <br />
+            09/16 - 04/18
             <br />
             GPA: 4.0
           </div>
