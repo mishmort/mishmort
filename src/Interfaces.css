@@ -26,7 +26,7 @@
 }
 
 .logoAni {
-  background-image: url("./assets/mishmortlogo.svg");
+  background-image: url("./assets/logos/mishmortlogo.svg");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -257,7 +257,7 @@
 }
 
 .rightAvatar {
-  margin-left:1px;
+  margin-left: 1px;
 }
 
 .bodyPartButton {
