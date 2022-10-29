@@ -69,11 +69,13 @@ body {
 .gridbg {
   background-color: rgba(1, 6, 20, 0.4);
   position: relative;
+  display: inline-block;
 }
 
 .gridbg::after {
   content: "";
   position: absolute;
+  display: block;
   top: 0;
   left: 0;
   width: 100%;
@@ -204,6 +206,16 @@ body {
 
 .navlinktext {
   display: inherit;
+}
+
+.mishmortlogo {
+  width: 60px;
+  min-height: 100px;
+  background-image: url("./assets/logos/mishmortlogo.svg");
+  /* background-attachment: fixed; */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 60px;
 }
 
 /* 📌 */

@@ -70,13 +70,7 @@ const Nav = () => {
             </span>
           </Link>
           <Link className="navlink homelogo" to="/" style={classes.navlink}>
-            <img
-              src={logo}
-              alt="mishmort logo"
-              className="mishmortlogo"
-              width="60px"
-              style={classes.mishmortlogo}
-            />
+            <div className="mishmortlogo"></div>
           </Link>
           <Link className="navlink" to="/experience" style={classes.navlink}>
             <span className="navlinktext">experience</span>
