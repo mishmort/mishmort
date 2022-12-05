@@ -328,19 +328,10 @@ const Avatar = () => {
               <img src={Ears} style={classes.drawings}></img>
               <img src={Freckles} style={classes.drawings}></img>
 
-              <img
-                src={allHair[hair - 1]}
-                style={classes.drawings}
-              ></img>
+              <img src={allHair[hair - 1]} style={classes.drawings}></img>
               <img src={allEyes[eyes - 1]} style={classes.drawings}></img>
-              <img
-                src={allMouth[mouth - 1]}
-                style={classes.drawings}
-              ></img>
-              <img
-                src={allHat[hat - 1]}
-                style={classes.drawings}
-              ></img>
+              <img src={allMouth[mouth - 1]} style={classes.drawings}></img>
+              <img src={allHat[hat - 1]} style={classes.drawings}></img>
             </div>
 
             <div className="rightbuttondice">
@@ -634,6 +625,17 @@ const Draw = () => {
 
 /* ｡･:*:･ﾟ★💕｡･:*:･ﾟ☆✨｡･:*:･ﾟ★💕｡･:*:･ﾟ☆✨｡･:*:･ﾟ★💕｡･:*:･ﾟ☆✨｡･:*:･ﾟ★💕｡･:*:･ﾟ☆✨｡･:*:･ﾟ★💕｡･:*:･ﾟ☆✨｡･:*:･ﾟ★💕｡･:*:･ﾟ☆✨ */
 // INTER4
+const World = () => {
+  const { interfaceTimer } = useContext(InterfaceContext);
+
+  return (
+    <div
+      className={interfaceTimer > 10 ? baseClasses + "logoAni" : baseClasses}
+    >
+      {interfaceTimer <= 6 && <div className="innerWorld innerStat"></div>}
+    </div>
+  );
+};
 
 /* ｡･:*:･ﾟ★💕｡･:*:･ﾟ☆✨｡･:*:･ﾟ★💕｡･:*:･ﾟ☆✨｡･:*:･ﾟ★💕｡･:*:･ﾟ☆✨｡･:*:･ﾟ★💕｡･:*:･ﾟ☆✨｡･:*:･ﾟ★💕｡･:*:･ﾟ☆✨｡･:*:･ﾟ★💕｡･:*:･ﾟ☆✨ */
 // INTER5
@@ -650,4 +652,4 @@ const Draw = () => {
 /* ｡･:*:･ﾟ★💕｡･:*:･ﾟ☆✨｡･:*:･ﾟ★💕｡･:*:･ﾟ☆✨｡･:*:･ﾟ★💕｡･:*:･ﾟ☆✨｡･:*:･ﾟ★💕｡･:*:･ﾟ☆✨｡･:*:･ﾟ★💕｡･:*:･ﾟ☆✨｡･:*:･ﾟ★💕｡･:*:･ﾟ☆✨ */
 // INTER9
 
-export { Calculator, Avatar, Draw };
+export { Calculator, Avatar, Draw, World };

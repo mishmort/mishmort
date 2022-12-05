@@ -497,3 +497,40 @@
   height: 20px;
   border: 1px solid white;
 }
+
+/* ｡･:*:･ﾟ★💕｡･:*:･ﾟ☆✨｡･:*:･ﾟ★💕｡･:*:･ﾟ☆✨｡･:*:･ﾟ★💕｡･:*:･ﾟ☆✨｡･:*:･ﾟ★💕｡･:*:･ﾟ☆✨｡･:*:･ﾟ★💕｡･:*:･ﾟ☆✨｡･:*:･ﾟ★💕｡･:*:･ﾟ☆✨ */
+/* WORLD */
+
+.innerWorld {
+  width: 200px;
+  height: 200px;
+  background: url("./assets/Globe.png");
+  background-size: 450px;
+  border-radius: 50%;
+  border: 1px solid white;
+  animation-name: rotate;
+  animation-duration: 12s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  -webkit-animation-name: rotate;
+  -webkit-animation-duration: 12s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+}
+
+@keyframes rotate {
+  from {
+    background-position: 0px 0px;
+  }
+  to {
+    background-position: 450px 0px;
+  }
+}
+@-webkit-keyframes rotate {
+  from {
+    background-position: 0px 0px;
+  }
+  to {
+    background-position: 450px 0px;
+  }
+}

@@ -10,7 +10,7 @@ import {
   Canvas,
 } from "./Stats";
 
-import { Calculator, Avatar, Draw } from "./Interfaces";
+import { Calculator, Avatar, Draw, World } from "./Interfaces";
 import { device, MishMortContext } from "./MishMort";
 import { createContext, useContext, useState, useEffect } from "react";
 
@@ -70,7 +70,8 @@ const Home = () => {
       >
         {currentDevice !== device.DESKTOP ? (
           <div className="homeMobile element gridbg">
-            ⛓️ THIS IS AN EXPERIMENTAL PAGE, BEST VIEWED ON A LARGER SCREEN ⛓️ <br/> 
+            ⛓️ THIS IS AN EXPERIMENTAL PAGE, BEST VIEWED ON A LARGER SCREEN ⛓️{" "}
+            <br />
             please check out the rest of the site
           </div>
         ) : (
@@ -92,12 +93,12 @@ const Home = () => {
             <Calculator />
             <Avatar />
             <Draw />
-            <Draw />
-            <Avatar />
-            <Calculator />
-            <Calculator />
-            <Avatar />
-            <Draw />
+            <World />
+            <World />
+            <World />
+            <World />
+            <World />
+            <World />
           </>
         )}
       </div>
