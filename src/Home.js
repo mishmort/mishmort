@@ -74,31 +74,31 @@ const Home = () => {
             please check out the rest of the site
           </div>
         ) : (
-          <>
-            <Globe />
-            <Knowledge />
-            <Spinny />
-
-            <Canvas />
-            <Mish />
-            <Game />
-
-            <SpinText />
-            <Graph />
-            <Pins />
-          </>
-
           // <>
-          //   <Calculator />
-          //   <Avatar />
-          //   <Draw />
-          //   <Draw />
-          //   <Avatar />
-          //   <Calculator />
-          //   <Calculator />
-          //   <Avatar />
-          //   <Draw />
+          //   <Globe />
+          //   <Knowledge />
+          //   <Spinny />
+
+          //   <Canvas />
+          //   <Mish />
+          //   <Game />
+
+          //   <SpinText />
+          //   <Graph />
+          //   <Pins />
           // </>
+
+          <>
+            <Calculator />
+            <Avatar />
+            <Draw />
+            <Draw />
+            <Avatar />
+            <Calculator />
+            <Calculator />
+            <Avatar />
+            <Draw />
+          </>
         )}
       </div>
     </InterfaceContext.Provider>

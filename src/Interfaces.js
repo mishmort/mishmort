@@ -5,6 +5,47 @@ import { useContext } from "react";
 import "./Interfaces.css";
 import Slider from "@mui/material/Slider";
 
+//TODO: clean this up
+import {
+  Head,
+  Body,
+  Ears,
+  Freckles,
+  Eyes1,
+  Eyes2,
+  Eyes3,
+  Eyes4,
+  Eyes5,
+  Eyes6,
+  Eyes7,
+  Eyes8,
+  Hair1,
+  Hair2,
+  Hair3,
+  Hair4,
+  Hair5,
+  Hair6,
+  Hat1,
+  Hat2,
+  Hat3,
+  Hat4,
+  Hat5,
+  Hat6,
+  Hat7,
+  Mouth1,
+  Mouth2,
+  Mouth3,
+  Mouth4,
+  Mouth5,
+  Mouth6,
+  Mouth7,
+} from "./assets/index";
+
+const allEyes = [Eyes1, Eyes2, Eyes3, Eyes4, Eyes5, Eyes6, Eyes7, Eyes8];
+const allHair = [Hair1, Hair2, Hair3, Hair4, Hair5, Hair6];
+const allHat = [Hat1, Hat2, Hat3, Hat4, Hat5, Hat6, Hat7];
+const allMouth = [Mouth1, Mouth2, Mouth3, Mouth4, Mouth5, Mouth6, Mouth7];
+
 const baseClasses = "stat element gridbg ";
 
 /* ｡･:*:･ﾟ★💕｡･:*:･ﾟ☆✨｡･:*:･ﾟ★💕｡･:*:･ﾟ☆✨｡･:*:･ﾟ★💕｡･:*:･ﾟ☆✨｡･:*:･ﾟ★💕｡･:*:･ﾟ☆✨｡･:*:･ﾟ★💕｡･:*:･ﾟ☆✨｡･:*:･ﾟ★💕｡･:*:･ﾟ☆✨ */
@@ -13,8 +54,6 @@ const baseClasses = "stat element gridbg ";
 // + - = / * ()
 
 const Calculator = () => {
-  // TODO: idk why there's a reloadtimer and an interfacetimer, might have to do with the reference, review that
-  // TODO:
   const { reloadtimer } = useContext(MishMortContext);
   const { interfaceTimer } = useContext(InterfaceContext);
 
@@ -45,14 +84,14 @@ const Calculator = () => {
             return acc;
         }
       });
-      setResults(ans);
+    setResults(ans);
     setExpression("");
   };
 
   const clearResults = () => {
-    setResults()
-    setExpression("")
-  }
+    setResults();
+    setExpression("");
+  };
 
   const classes = {
     numberbuttongrid: {
@@ -77,10 +116,7 @@ const Calculator = () => {
       {interfaceTimer <= 9 && (
         <div className="innerCalculator innerStat">
           <div className="numberbuttongrid" style={classes.numberbuttongrid}>
-            <div
-              className="calcresults"
-              style={{ gridArea: "calcresults" }}
-            >
+            <div className="calcresults" style={{ gridArea: "calcresults" }}>
               {results ? results : expression}
             </div>
             {[...Array(10).keys()].map((value) => {
@@ -287,28 +323,22 @@ const Avatar = () => {
               <span className="chevron">&#171;</span>
             </button>
             <div className="avatarWindow">
-              <img src="./assets/avatarDrawings/HEAD.png" style={classes.drawings}></img>
-              <img src="./assets/avatarDrawings/BODY.png" style={classes.drawings}></img>
-              <img src="./assets/avatarDrawings/EARS.png" style={classes.drawings}></img>
-              <img
-                src="./assets/avatarDrawings/FRECKLES.png"
-                style={classes.drawings}
-              ></img>
+              <img src={Head} style={classes.drawings}></img>
+              <img src={Body} style={classes.drawings}></img>
+              <img src={Ears} style={classes.drawings}></img>
+              <img src={Freckles} style={classes.drawings}></img>
 
               <img
-                src={"./assets/avatarDrawings/HAIR" + hair + ".png"}
+                src={allHair[hair - 1]}
+                style={classes.drawings}
+              ></img>
+              <img src={allEyes[eyes - 1]} style={classes.drawings}></img>
+              <img
+                src={allMouth[mouth - 1]}
                 style={classes.drawings}
               ></img>
               <img
-                src={"./assets/avatarDrawings/EYES" + eyes + ".png"}
-                style={classes.drawings}
-              ></img>
-              <img
-                src={"./assets/avatarDrawings/MOUTH" + mouth + ".png"}
-                style={classes.drawings}
-              ></img>
-              <img
-                src={"./assets/avatarDrawings/HAT" + hat + ".png"}
+                src={allHat[hat - 1]}
                 style={classes.drawings}
               ></img>
             </div>
